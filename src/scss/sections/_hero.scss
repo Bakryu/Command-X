@@ -11,7 +11,7 @@
 .hero__header {
   position: relative;
   width: 100%;
-  height: 170px;
+  height: 750px;
 }
 .hero:after {
   content: "";
@@ -29,7 +29,7 @@
   position: absolute;
   left: 15px;
   top: 0;
-
+  font-size: 15px;
   opacity: 1;
   transform: translateX(-15px);
   animation: 1.6s cubic-bezier(0.785, 0.135, 0.15, 0.86) 1s i;
@@ -66,14 +66,14 @@ h1 {
 }
 
 .hamburger {
-  width: 30px;
-  height: 30px;
+  width: 25px;
+  height: 25px;
   position: relative;
 }
 
 .hamburger .bar {
   padding: 0;
-  width: 30px;
+  width: 25px;
   height: 2px;
   background-color: #fff;
   display: block;
@@ -88,7 +88,8 @@ h1 {
 
 .bar2,
 .bar3 {
-  top: 13.5px;
+  top: 50%;
+  transform: translateY(-50%);
 }
 
 .bar3 {
@@ -102,7 +103,7 @@ h1 {
 .checkbox1:checked + label > .hamburger1 > .bar1 {
   transform: rotate(45deg);
   transform-origin: 5%;
-  width: 41px;
+  width: 36px;
 }
 
 .checkbox1:checked + label > .hamburger1 > .bar2 {
@@ -118,18 +119,113 @@ h1 {
 .checkbox1:checked + label > .hamburger1 > .bar4 {
   transform-origin: 5%;
   transform: rotate(-45deg);
-  width: 41px;
+  width: 36px;
 }
 // Hero content
 .hero__content {
   display: flex;
   flex-direction: column;
+  align-items: left;
   width: 100%;
 }
 .burger-wrapper {
   margin: 0 calc(50% - 29vw);
   height: 305px;
+  max-width: 308px;
+  max-height: 358px;
 }
 .burger_image {
   width: 100%;
+}
+
+.hero__title {
+  position: relative;
+  font-size: 12px;
+  letter-spacing: 1.07px;
+  text-transform: uppercase;
+}
+.hero__title:after {
+  content: "";
+  display: block;
+  width: 55px;
+  height: 1px;
+  position: absolute;
+  left: 0;
+  top: 70px;
+  background: #fff;
+  z-index: 1;
+}
+
+h1 {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  font-stretch: extra-condensed;
+  font-family: "Bebas Neue";
+  span {
+    font-size: 30px;
+    font-weight: 400;
+    letter-spacing: 1.25px;
+    text-transform: uppercase;
+  }
+}
+.hero__article {
+  margin-top: 30px;
+  font-size: 16px;
+  line-height: 24px;
+}
+// Foooter
+
+.center_scroll {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 20px;
+  height: 33px;
+  border-radius: 15px;
+  border: 2px solid #fff;
+  transform: translateZ(0);
+}
+.center_scroll:after {
+  content: "";
+  position: absolute;
+  left: 50%;
+  top: 5px;
+  margin-left: -1px;
+  width: 2px;
+  height: 15px;
+  background: #fff;
+  border-radius: 2px;
+  animation: g 2s infinite linear;
+  transform-origin: 50% 0;
+}
+
+.hero__footer {
+  position: relative;
+  height: 100%;
+}
+.our-works_wrapper {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+}
+.our-works {
+  font-size: 18px;
+  letter-spacing: 2px;
+  line-height: 23px;
+  font-family: sans-serif;
+}
+.our-works:hover:after {
+  transition: 0.5s;
+  width: 0;
+}
+.our-works:after {
+  transition: 0.5s;
+  content: "";
+  display: block;
+  width: 100%;
+  height: 1px;
+  background: #fff;
+  left: 0;
+  bottom: -2px;
 }
