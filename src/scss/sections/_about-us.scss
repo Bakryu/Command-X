@@ -5,7 +5,6 @@
   position: relative;
   display: flex;
   flex-direction: column;
-  color: $primary-black-color;
 }
 .about-command-x {
   position: relative;
@@ -25,6 +24,9 @@ h3 {
 p {
   font-size: 20px;
   line-height: 32px;
+}
+.red-line_command-x {
+  margin-left: 24px;
 }
 .red-line_command-x:before {
   content: "";
@@ -61,9 +63,7 @@ p {
     line-height: 40px;
   }
 }
-.about-us__btn-desktop {
-  display: none;
-}
+
 @media screen and (min-width: 800px) {
   .about-us {
     flex-direction: row;
@@ -85,9 +85,7 @@ p {
   .red-line_services:before {
     display: none;
   }
-  .about-us__btn-mobile {
-    display: none;
-  }
+
   .our-services_list {
     li {
       font-size: 30px;
@@ -97,11 +95,5 @@ p {
     top: 40px;
     width: 60px;
     left: -80px;
-  }
-  .desktop-small-btn {
-    width: 127px;
-  }
-  .about-us__btn-desktop {
-    display: block;
   }
 }

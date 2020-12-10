@@ -7,8 +7,14 @@ body {
   font-family: "Bebas Neue", sans-serif;
 }
 .section-decor {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  color: $primary-black-color;
   padding: 0 15px;
 }
+
+// BTN
 .btn {
   display: block;
   margin-top: 20px;
@@ -38,4 +44,33 @@ body {
   background: $primary-red-color;
   width: 100%;
   font-size: 1rem;
+}
+.about-us__btn-desktop {
+  display: none;
+}
+
+@media screen and (min-width: 800px) {
+  .section-decor {
+    flex-direction: row;
+    justify-content: space-around;
+    padding: 50px 50px 0;
+    margin-bottom: 264px;
+    margin-top: 0;
+  }
+  .about-us__btn {
+    display: none;
+  }
+  .desktop-small-btn {
+    width: 127px;
+  }
+  .desktop-bigger-btn {
+    width: 178px;
+  }
+  .about-us__btn-desktop {
+    display: block;
+  }
+  .declare__content-wrapper {
+    width: 50%;
+    margin-left: 80px;
+  }
 }
