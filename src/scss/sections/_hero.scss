@@ -38,7 +38,7 @@
   max-width: 133px;
 }
 
-@media screen and (min-width: 800px) {
+@media screen and (min-width: 900px) {
   .hero {
     padding: 50px;
   }
@@ -141,8 +141,8 @@ h1 {
 .burger-wrapper {
   margin: 0 calc(50% - 29vw);
   height: 305px;
-  max-width: 308px;
-  max-height: 358px;
+  max-width: 260px;
+  max-height: 308px;
 }
 .burger_image {
   width: 100%;
@@ -186,7 +186,7 @@ h1 {
   line-height: 24px;
 }
 
-@media screen and (min-width: 800px) {
+@media screen and (min-width: 900px) {
   .hero__content {
     flex-direction: row;
     justify-content: space-around;
@@ -203,8 +203,8 @@ h1 {
     max-height: 358px;
   }
   .burger_image {
-    width: 300px;
-    height: 313px;
+    width: 370px;
+    height: 530px;
     max-width: 370px;
   }
   .hero__title {
@@ -285,7 +285,7 @@ h1 {
 .social {
   display: none;
 }
-@media screen and (min-width: 800px) {
+@media screen and (min-width: 900px) {
   .center_scroll {
     left: 50%;
   }

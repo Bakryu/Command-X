@@ -2,7 +2,7 @@
 @import "../global";
 
 .declare {
-  margin-top: 50px;
+  overflow: hidden;
 }
 .declare__background-wrapper {
   position: absolute;
@@ -48,7 +48,7 @@ h3 {
   color: $article-black-color;
 }
 
-@media screen and (min-width: 800px) {
+@media screen and (min-width: 900px) {
   .declare__background-wrapper {
     height: 670px;
     left: -80%;
@@ -68,6 +68,25 @@ h3 {
     flex-direction: row-reverse;
     .declare__background-wrapper {
       left: 80%;
+    }
+  }
+}
+
+@media screen and (min-width: 1400px) {
+  .declare__background-wrapper {
+    height: 670px;
+    left: -60%;
+  }
+  h3 {
+    font-weight: 900;
+  }
+  .declare__image {
+    height: 670px;
+  }
+  .section-reverse {
+    flex-direction: row-reverse;
+    .declare__background-wrapper {
+      left: 60%;
     }
   }
 }
