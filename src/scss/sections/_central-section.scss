@@ -1,10 +1,10 @@
 @import "../variables";
 @import "../global";
 
-.declare {
+.central-section {
   overflow: hidden;
 }
-.declare__background-wrapper {
+.central-section__background-wrapper {
   position: absolute;
   top: 0;
   left: 0;
@@ -13,7 +13,7 @@
   box-shadow: 0 0 20px rgba(0, 0, 0, 0.4);
   z-index: -1;
 }
-.declare__background {
+.central-section__background {
   width: 100%;
   filter: blur(4px);
   transform: scale(1.2);
@@ -23,9 +23,9 @@
   height: auto;
 }
 
-.declare__image-wrapper {
+.central-section__image-wrapper {
   padding-top: 50px;
-  .declare__image {
+  .central-section__image {
     width: 100%;
     max-width: 540px;
   }
@@ -49,43 +49,43 @@ h3 {
 }
 
 @media screen and (min-width: 900px) {
-  .declare__background-wrapper {
+  .central-section__background-wrapper {
     height: 670px;
     left: -80%;
   }
-  .declare__image-wrapper {
+  .central-section__image-wrapper {
     padding: 0 15px;
     width: 50%;
     height: 304px;
-    .declare__image {
+    .central-section__image {
       height: 100%;
     }
   }
-  .declare__content-wrapper {
+  .central-section__content-wrapper {
     padding-top: 60px;
   }
   .section-reverse {
     flex-direction: row-reverse;
-    .declare__background-wrapper {
+    .central-section__background-wrapper {
       left: 80%;
     }
   }
 }
 
 @media screen and (min-width: 1400px) {
-  .declare__background-wrapper {
+  .central-section__background-wrapper {
     height: 670px;
     left: -60%;
   }
   h3 {
     font-weight: 900;
   }
-  .declare__image {
+  .central-section__image {
     height: 670px;
   }
   .section-reverse {
     flex-direction: row-reverse;
-    .declare__background-wrapper {
+    .central-section__background-wrapper {
       left: 60%;
     }
   }

@@ -2,12 +2,6 @@
 @import "./global";
 @import "./sections/hero";
 @import "./sections/about-us";
-@import "./sections/declare";
+@import "./sections/_central-section";
 @import "./variables";
-
-$color: rgba(tomato, 0.4);
-
-body {
-}
-input {
-}
+@import "./sections/footer";

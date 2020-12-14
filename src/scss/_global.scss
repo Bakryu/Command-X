@@ -5,6 +5,7 @@ body {
   position: relative;
   color: #fff;
   font-family: $primary-font;
+  font-weight: 700;
   h1 {
     font-family: "Bebas Neue";
   }
@@ -84,7 +85,7 @@ body {
   .section-decor {
     flex-direction: row;
     justify-content: space-around;
-    padding: 50px 50px 264px;
+    padding: 50px 50px 237px;
     margin-top: 0;
     padding-left: calc(50% - 550px);
     padding-right: calc(50% - 550px);
@@ -101,7 +102,7 @@ body {
   .about-us__btn-desktop {
     display: block;
   }
-  .declare__content-wrapper {
+  .central-section__content-wrapper {
     width: 50%;
     margin-left: 80px;
   }

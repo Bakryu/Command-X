@@ -1,0 +1,116 @@
+@import "../variables";
+
+.footer {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 30px 15px 10px;
+  background-color: $article-black-color;
+  a {
+    text-decoration: none;
+  }
+}
+
+.footer__logo-wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.footer__logo {
+  img {
+    height: 34px;
+    display: block;
+    margin: 0 auto;
+  }
+}
+.footer__logo-description {
+  display: flex;
+  justify-content: center;
+  margin: 10px 0 20px;
+}
+.footer__years-desktop {
+  display: none;
+}
+
+.footer__list-wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.footer__list-title {
+  color: #fff;
+  margin: 0 auto;
+}
+.footer__list-item {
+  margin: 10px auto;
+  position: relative;
+  color: #fff;
+  opacity: 0.4;
+  font-size: 18px;
+  transition: 0.3s ease-in-out;
+}
+.footer__years {
+  font-size: 14px;
+  margin: 0 auto;
+}
+
+.social-instagram:before {
+  content: url("https://comnd-x.com/web/front_new/images/instagram.svg");
+  position: absolute;
+  top: 0;
+  left: -30px;
+}
+.social-behans:before {
+  content: url("https://comnd-x.com/web/front_new/images/behance.svg");
+  position: absolute;
+  top: 0;
+  left: -30px;
+}
+
+@media screen and (min-width: 900px) {
+  .footer {
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 30px 50px 10px;
+    padding-left: calc(50% - 550px);
+    padding-right: calc(50% - 550px);
+
+    h3 {
+      font-size: 25px;
+      font-weight: 700;
+    }
+  }
+  .footer__list-wrapper {
+  }
+  .footer__years-mobile {
+    display: none;
+  }
+  .footer__years-desktop {
+    display: block;
+    color: #fff;
+    font-size: 18px;
+    opacity: 0.4;
+  }
+
+  .footer__list-title,
+  .footer__list-item {
+    margin-left: 0;
+  }
+  .social-instagram,
+  .social-behans {
+    margin-left: 30px;
+  }
+
+  .footer__logo {
+    img {
+      margin: 0;
+    }
+  }
+  .footer__logo-description {
+    justify-content: start;
+    margin-bottom: 100px;
+  }
+}
